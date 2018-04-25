@@ -1,5 +1,6 @@
 package Base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
@@ -32,7 +33,8 @@ public class baseclassA
 			
 			System.out.println("base class hello world");
 								
-			String filePath = "src\\main\\resources\\prop\\config_"+environmentName+".properties";
+			String filePath= "."+File.separator+"src"+File.separator+"main"+File.separator+"resources"+File.separator+"prop"+File.separator+"config_"+ environmentName +".properties";
+			//String filePath = "src\\main\\resources\\prop\\config_"+environmentName+".properties";
 			
 			System.out.println("File taken from : =============================== " + filePath);
 			
